@@ -1,0 +1,17 @@
+{
+	"name": "chip-8",
+	"image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"[rust]":{
+					"editor.formatOnSave": true
+				},
+				"rust-analyzer.checkOnSave": true,
+				"rust-analyzer.check.command": "clippy"
+			},
+			"extensions": [
+			]
+		}
+	}
+}
