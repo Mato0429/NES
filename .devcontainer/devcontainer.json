@@ -1,5 +1,5 @@
 {
-	"name": "chip-8",
+	"name": "nes",
 	"image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",
 	"customizations": {
 		"vscode": {
