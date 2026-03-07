@@ -1,6 +1,19 @@
 {
 	"name": "nes",
-	"image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",
+	"build":{
+		"dockerfile": "../Dockerfile"
+	},
+	"containerEnv": {
+        "DISPLAY": "${localEnv:DISPLAY}",
+        "WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
+        "XDG_RUNTIME_DIR": "${localEnv:XDG_RUNTIME_DIR}",
+        "PULSE_SERVER": "${localEnv:PULSE_SERVER}"
+    },
+    "runArgs": [
+        "--device=/dev/dxg",
+        "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+        "-v", "/mnt/wslg:/mnt/wslg"
+    ],
 	"customizations": {
 		"vscode": {
 			"settings": {
