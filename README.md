@@ -2,6 +2,11 @@
 Rustで記述されたNESエミュレーターです。  
 Rustの言語仕様, エミュレーターの動作原理, Gitの使い方,... の学習を目的としています。
 
+## 環境
+- Windows11 WSL2(WSLg)
+- Docker Desktop
+- VSCode
+
 ## ロードマップ
 ### Phase 1
 - [ ] CPU, 命令セット, NROMマッパーの実装
